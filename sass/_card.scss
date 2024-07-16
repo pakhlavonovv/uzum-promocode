@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card__header{
+    margin-top: 30px;
+    img{
+        width: 20%;
+    }
+    h1{
+        color: #7000FF;
+    }
+    .card__header__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.card__wrapper{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #dfdfdf;
+    .card{
+        width: 30%;
+        height: 90vh;
+        padding: 40px;
+        background-color: #7000FF;
+        box-shadow: 0 0 20px 0 #7000FF;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        border-radius: 20px;
+        img{
+            width: 20%;
+        }
+        h1, h2, p{
+            color: white;
+            text-align: center;
+        }
+        h2{
+            border-bottom: 3px solid white;
+        }
+        button{
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 192px;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            color: #7000FF;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all ease 0.4s;
+            &:hover{
+                background-color: transparent;
+                color: white;
+                border: 1px solid white;
+            }
+        }
+        .card_promo{
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            .input__promo{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                input{
+                    width: 160%;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 8px;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

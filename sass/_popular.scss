@@ -1,0 +1,45 @@
+.popular{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    .popular__title{
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .popular__cards{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 40px;
+        .card{
+            width: 300px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px 0 #dedede;
+            transition: all ease 0.4s;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 0 0 20px 0 #dedede;
+            }
+            img{
+                width: 100%;                
+            }
+            .card__bottom{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .un__card{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    button{
+                        border: none;
+                        background-color: transparent;
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
